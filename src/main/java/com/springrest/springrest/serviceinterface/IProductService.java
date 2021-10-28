@@ -8,4 +8,6 @@ public interface IProductService {
 
 	ResponseEntity<?> createProduct(ProductCreateRequest productCreateRequest);
 
+	ResponseEntity<?> getProduct(String searchOption);
+
 }
