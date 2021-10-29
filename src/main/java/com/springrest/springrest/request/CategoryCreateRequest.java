@@ -16,7 +16,7 @@ public class CategoryCreateRequest implements Serializable{/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private String catgory;
+	private String category;
 	private List<ProductCreateRequest> product;
 
 

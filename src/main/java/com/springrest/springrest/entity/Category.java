@@ -31,7 +31,7 @@ public class Category implements Serializable{
 	
 	private String category;
 	
-	@OneToMany(cascade=CascadeType.ALL)  
+	@OneToMany(cascade=CascadeType.ALL,mappedBy = "category")  
 	private List<Product> product;
 	
 }

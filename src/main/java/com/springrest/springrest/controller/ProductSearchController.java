@@ -22,9 +22,10 @@ public class ProductSearchController implements Serializable{
 	@Autowired
 	private IProductService iProductService;
 	
-//	@GetMapping("product")
-//	public ResponseEntity<?> getProduct(@RequestBody ProductSearchRequest productSearchRequest){
-//		return this.iProductService.getProduct(productSearchRequest);
-//	}
+	
+	@GetMapping("product/{search}")
+	public ResponseEntity<?> getProduct(@PathVariable("search") final String search){
+		return this.iProductService.getProduct(search);
+	}
 
 }

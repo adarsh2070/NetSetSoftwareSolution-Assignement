@@ -1,4 +1,4 @@
-package com.springrest.springrest.request;
+package com.springrest.springrest.service;
 
 import java.io.Serializable;
 
@@ -8,14 +8,13 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class ProductSearchRequest implements Serializable{
-
-	/**
+public class ProductSearchResponse implements Serializable{/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private String productName;
+	private Long id;
 	private String color;
-	private String category;
-
+	private Long price;
+	private String image;
+	private String name;
 }
