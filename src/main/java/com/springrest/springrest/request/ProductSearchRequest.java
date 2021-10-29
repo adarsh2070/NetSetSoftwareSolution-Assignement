@@ -8,14 +8,11 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
+public class ProductSearchRequest implements Serializable{
 
-public class ProductCreateRequest implements Serializable{/**
+	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private String productName;
-	private String productImage; 
-	private String color;
-	private Long price;
 
 }
